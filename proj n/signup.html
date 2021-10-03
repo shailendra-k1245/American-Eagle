@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>American Eagle India - Buy Mens & Womens Clothing, Shoes & Accessories| AEO</title>
+
+</head>
+<body>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+    background-color: #f9f9f8;
+}
+
+#hr{
+    border-top: 0.125rem solid black;
+    width: 100%;
+    margin-bottom: 5%;
+}
+
+h2{
+    font-weight: 400;
+    font-size: 1.7rem;
+}
+
+h2 span{
+    font-weight: 600;
+}
+
+p{
+    margin-top: 0.8rem;
+    color: #48464A;
+}
+
+form{
+    width: 40%;
+    margin: 1.5rem auto;
+    padding: 2rem;
+    background-color: #f1f1f1;
+}
+
+input{
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    margin-top: 1.7rem;
+    background-color: white;
+    outline: none;
+    border: 0.1rem solid gray;
+    font-size: 1.2rem;
+}
+
+input[type = submit]{
+    background-color: black;
+    color: white;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    cursor: pointer;
+}
+
+input[type = button]{
+    background-color: black;
+    color: white;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    cursor: pointer;
+    margin-bottom: 1.7rem;
+}
+
+#create_account{
+    margin-bottom: 0;
+}
+
+input[name = gender]{
+    display: inline-block;
+    margin: 6% 3% 0 2%;
+    transform: scale(100%);
+    width: fit-content;
+    border: 1px solid red;
+}
+
+@media (max-width: 900px){
+    html{
+        font-size: 14px;
+    }
+
+    form{
+        width: 60%;
+    }
+}
+
+@media (max-width: 780px){
+    html{
+        font-size: 12px;
+    }
+
+    form{
+        width: 90%
+    }
+}
+
+@media (max-width: 640px){
+    html{
+        font-size: 10px;
+    }
+    
+}
+    </style>
+
+    <form action="" id="signup_form" onsubmit="signup(event)">
+        <div id="hr"></div>
+
+      <h2>WELCOME TO<br /><span>AMERICAN EAGLE</span></h2>
+
+      <p>
+        Register with us to get latest updates and manage your orders.
+      </p>
+
+      <input type="text" id="name" placeholder="Name" required>
+
+      <input type="text" id="dob" onfocus="(this.type='date')" placeholder="Date of birth" required>
+
+      <input type="tel" id="mobile" placeholder="Mobile Number" minlength="10" maxlength="10" required>
+
+      <input type="text" id="email" placeholder="Enter email" required />
+
+      <p>GENDER</p>
+
+      <input type="radio" name="gender" id="male" value="male">
+      <label for="male">Male</label>
+
+      <input type="radio" name="gender" id="female" value="female">
+      <label for="female">Female</label>
+
+      <input type="radio" name="gender" id="other" value="other">
+      <label for="other">Other</label>
+
+      <input type="password" id="password" placeholder="Set a new password" required/>
+
+      <input type="password" name="" id="password2" placeholder="confirm password" required>
+      <br>
+       <div style="text-align: center;"><button ondblclick="(location.href= 'signin.html')" style="background-color: black;color: white; font-size: 25px; padding: 1%;">Create Account</button></div>
+    </form>
+
+
+    <script>
+        function signup(e){
+    e.preventDefault();
+
+    let signup_data = document.getElementById("signup_form");
+
+    let name = signup_data.name.value;
+
+    let email = signup_data.email.value;
+
+    let mobile = signup_data.mobile.value;
+
+    let password1 = signup_data.password.value;
+
+    let password2 = signup_data.password2.value;
+
+    let dob = signup_data.dob.value;
+    
+    let gender = document.querySelector('input[name = "gender"]:checked').value;
+
+
+    let re = /^(?=.*\d)(?=.*[!@#$%^&*])(?=.*[a-z])(?=.*[A-Z]).{8,}$/;
+
+
+    let a=re.test(password1);
+
+    
+    if(a==false){
+        alert("password should contain at least one digit, one lower case, one upper case and minimum length of 8 character");
+        return a;
+    }
+    if(password1 != password2){
+        alert("Password is not same");
+        return false;
+    }
+
+   
+    if(localStorage.getItem("users") === null){
+        localStorage.setItem("users", JSON.stringify([]));
+    };
+
+    let user = {
+        name,
+        dob,
+        mobile,
+        email,
+        gender,
+        password1
+    }
+
+    let arr = JSON.parse(localStorage.getItem("users"));
+
+    arr.push(user);
+
+    localStorage.setItem("users", JSON.stringify(arr));
+
+}
+    </script>
+</body>
+</html>

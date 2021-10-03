@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ckeckout Summary</title>
+  </head>
+  <body>
+
+    <style>
+
+   @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+      
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family:  "Poppins", sans-serif;
+}
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+
+  padding: 2.7rem 1rem;
+  align-items: center;
+  width: 100%;
+  height: 5rem;
+  box-shadow: 0 0.03rem 0.4rem rgb(190, 190, 190);
+}
+
+header div#logo {
+  font-weight: 400;
+  font-size: 1.1rem;
+  word-spacing: 0.3rem;
+  letter-spacing: 0.2rem;
+  margin-left: 1.3rem;
+}
+
+div#email-wrapper {
+  display: flex;
+  align-items: center;
+  margin-right: 1.3rem;
+}
+
+header div#email-wrapper span {
+  font-size: 2rem;
+}
+
+header div#email-wrapper a {
+  text-decoration: none;
+  color: black;
+  font-size: 0.95rem;
+  font-weight: 300;
+  padding-left: 0.5rem;
+}
+
+header a {
+  text-decoration: none;
+  color: black;
+  font-size: 0.95rem;
+}
+
+
+#empty_cart {
+  display: none;
+}
+section {
+  border: 1px solid #d1cece;
+  width: 96%;
+  margin: 4rem auto 1rem;
+  letter-spacing: 0.05rem;
+  font-size: 1.3rem;
+  word-spacing: 0.4rem;
+  text-align: center;
+  line-height: 4rem;
+}
+
+#cart_btn-wrapper {
+  width: 30%;
+  margin: auto;
+}
+
+#cart_btn-wrapper button {
+  width: 100%;
+  padding: 1rem;
+  color: white;
+  background-color: black;
+  border: none;
+  outline: none;
+}
+
+#goToPayment{
+  width: 30%;
+  margin: 1rem auto;
+}
+
+#goToPayment button{
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.2rem;
+  color: white;
+  background-color: black;
+  border: none;
+  outline: none;
+}
+
+
+#container {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 2rem;
+}
+
+#order_summary {
+
+  width: 27%;
+  max-height: 18rem;
+  background-color: #f2f2f2;
+  padding: 1rem 2rem;
+}
+
+#order_summary span {
+  font-size: 0.8rem;
+}
+
+#order_summary p:nth-child(1) {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+#order_summary p:nth-child(2) {
+  padding-bottom: 1.5rem;
+}
+
+#order_summary p:nth-child(2) span:nth-child(1) {
+  float: left;
+}
+
+#order_summary p:nth-child(2) span:last-child {
+  float: right;
+
+}
+
+#order_summary p:nth-child(2) span:last-child::before {
+  content: "\20B9";
+}
+
+#order_summary p:nth-child(3) {
+  clear: both;
+}
+
+#order_summary p:nth-child(3) span:nth-child(1) {
+  float: left;
+}
+#order_summary p:nth-child(3) span:last-child {
+  float: right;
+}
+
+#order_summary hr {
+  clear: both;
+  margin-top: 1.5rem;
+  border-top: 0.1rem solid black;
+}
+
+#order_summary p:nth-child(5) span {
+  font-weight: 600;
+}
+
+#order_summary p:nth-child(5) span:last-child {
+  float: right;
+}
+
+div#coupon-box {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.8rem;
+}
+
+#coupon-box p {
+  font-size: 0.8rem !important;
+}
+
+#coupon-box input {
+  padding: 0.3rem 0;
+  border: none;
+  outline: none;
+  text-align: center;
+}
+
+#order_summary button{
+  width: 50%;
+  background-color: #918c8c;
+  font-size: 1.2rem;
+  padding: 3%;
+  color: white;
+  margin: 12% 0 0 25%;
+  border: none;
+  outline: none;
+}
+
+#order_detail {
+  width: 65%;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap: 1rem;
+}
+
+
+.item-container {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.img-container {
+  width: 100%;
+  height: 25rem;
+}
+
+.img-container img {
+  width: 100%;
+  height: inherit;
+}
+
+.text-container {
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.text-container p {
+  line-height: 1.3rem;
+}
+
+.text-container p:nth-child(2):before {
+  content: "\20B9";
+}
+    </style>
+    <header>
+      <div id="logo">
+        <p>AMERIAN EAGLE</p>
+      </div>
+
+      <div id="email-wrapper">
+        <span>&#9993;</span>
+        <a href="mailto:happytohelp@aeo.in">happytohelp@aeo.in</a>
+      </div>
+    </header>
+
+    <section id="empty_cart">
+      <section>
+        <h1>No Products in cart</h1>
+      </section>
+
+      <div id="cart_btn-wrapper">
+        <a href="./menJeans.html"><button>ADD PRODUCTS TO CART</button></a>
+      </div>
+    </section>
+
+    <div id="container"></div>
+
+    <div id="goToPayment">
+       <button class ="proceed" onclick="(location.href= 'payment.html')">Continue to payment</button>
+    </div>
+
+
+    <script>
+      let parent = document.getElementById("container");
+
+let order_summary = document.createElement("div");
+order_summary.id = "order_summary";
+
+let order_heading = document.createElement("p");
+
+order_heading.innerHTML = "Order Summary";
+
+let order_value = document.createElement("p");
+
+let odr_val_span1 = document.createElement("span");
+odr_val_span1.innerText = "Order Value";
+
+let odr_val_span2 = document.createElement("span");
+odr_val_span2.id = "total-price"
+
+order_value.append(odr_val_span1, odr_val_span2);
+
+let shipping = document.createElement("p");
+
+let shipping_span1 = document.createElement("span");
+shipping_span1.innerText = "Shipping";
+
+let shipping_span2 = document.createElement("span");
+shipping_span2.id = "ship-price";
+shipping_span2.innerText = "Free";
+
+shipping.append(shipping_span1, shipping_span2);
+
+let hr1 = document.createElement("hr");
+
+let order_total = document.createElement("p");
+
+let odr_totl_span1 = document.createElement("span");
+odr_totl_span1.innerText = "ORDER TOTAL";
+
+let odr_totl_span2 = document.createElement("span");
+odr_totl_span2.id = "discount-price";
+odr_totl_span2.innerText = ".";
+
+order_total.append(odr_totl_span1, odr_totl_span2);
+
+let cpn_box = document.createElement("div");
+cpn_box.id = "coupon-box";
+
+let enter_code_text = document.createElement("p");
+enter_code_text.innerText = "Coupon Code";
+
+let enter_code = document.createElement("input");
+enter_code.setAttribute("type", "text");
+enter_code.id = "coupon-code";
+
+
+cpn_box.append(enter_code_text, enter_code);
+
+let code_button = document.createElement("button");
+code_button.innerText = "Submit";
+
+code_button.onclick = function () {
+    codeSubmit();
+};
+
+order_summary.append(order_heading, order_value, shipping, hr1, order_total, cpn_box, code_button);
+
+let order_detail = document.createElement("div");
+order_detail.id = "order_detail";
+
+parent.append(order_detail, order_summary);
+
+
+let cart_items = JSON.parse(localStorage.getItem("cart"));
+
+if (cart_items.length == 0) {
+    document.getElementById("empty_cart").style.display = "block";
+
+    document.getElementById("container").style.display = "none";
+
+    document.getElementById("goToPayment").style.display = "none";
+}
+
+let grand_total = 0;
+
+let cart_item_displayParent = document.getElementById("order_detail");
+
+
+let totalPrice = document.getElementById("total_price");
+
+
+function showProduct() {
+    cart_items.forEach(function (product) {
+
+        grand_total += Number(product.price);
+        let div = document.createElement("div");
+        div.setAttribute("class", "item-container");
+
+        let img = document.createElement("img");
+        img.setAttribute("class", "item-img");
+        img.src = product.image;
+
+        let item_name = document.createElement("p");
+        item_name.innerText = product.name;
+
+        let price = document.createElement("p");
+        price.innerText = product.price;
+
+        let text_div = document.createElement("div");
+        text_div.setAttribute("class", "text-container");
+
+        let img_div = document.createElement("div");
+        img_div.setAttribute("class", "img-container");
+        img_div.append(img);
+
+        text_div.append(item_name, price);
+
+        div.append(img_div, text_div);
+
+        cart_item_displayParent.append(div);
+    });
+}
+showProduct();
+
+
+document.getElementById("total-price").innerText = grand_total;
+
+
+function codeSubmit() {
+
+    let code_value = document.getElementById("coupon-code").value;
+
+    if (code_value === "AEB2G30") {
+
+        grand_total = Math.ceil((grand_total * 70) / 100);
+
+        document.getElementById("total-price").innerText = grand_total;
+    }
+
+    else {
+        alert("Coupon Code is wrong")
+    }
+}
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,1132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy Graphic T-shirts for Men</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+</head>
+
+<body>
+
+    <style>
+
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+#firstSubBox {
+
+  background-color: #fbfbfb;
+  padding: 0 1rem 0 1rem;
+}
+
+#sorting {
+
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#sorting p {
+  font-size: 0.93rem;
+  font-weight: 600;
+  padding-left: 1.1rem;
+}
+
+#container {
+
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#filter {
+
+  width: 24%;
+  min-height: 85vh;
+  margin-bottom: 1rem;
+}
+
+
+.item-container {
+  width: 24%;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.img-container {
+  width: 100%;
+  height: 25rem;
+}
+
+.img-container img {
+  width: 100%;
+  height: inherit;
+}
+
+.text-container {
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.text-container p {
+  line-height: 1.3rem;
+}
+
+.text-container p:nth-child(2):before {
+  content: "\20B9";
+}
+
+.img-container button {
+  position: relative;
+  padding: 1rem;
+  border-radius: 2rem;
+  background-color: gainsboro;
+  font-size: 1.1rem;
+  font-weight: 500;
+  width: 10rem;
+  bottom: 55%;
+  outline: none;
+  border: none;
+  display: none;
+}
+
+.img-container:hover button {
+  display: inline-block;
+}
+.img-container:hover img {
+  opacity: 0.3;
+}
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  scroll-padding-top: 2rem;
+}
+
+:root {
+  --main-color:#fda702;
+  --second-color: #ebeff2;
+  --text-color: #02171d;
+  --bg-color: #fff;
+
+}
+
+html::-webkit-scrollbar {
+  width: 0.5rem;
+}
+html::-webkit-scrollbar-track {
+  background: transparent;
+}
+html::-webkit-scrollbar-thumb {
+  background: var(--main-color);
+  border-radius: 5rem;
+}
+.btn {
+  padding: 0.7rem 1.2rem;
+  background: var(--main-color);
+  color: var(--bg-color);
+  font-weight: 500;
+  display: inline-block;
+  text-transform: uppercase;
+  clip-path: polygon(100% 0, 93% 50%, 86% 99%, 0% 100%, 7% 47%, 13% 0%);
+}
+.btn:hover {
+  background: var(--text-color);
+  letter-spacing: 2px;
+  transition: 0.2s;
+}
+section {
+  padding: 50px 10px;
+}
+.main-heading{
+    padding: 0 10px;
+}
+header.shadow {
+  background: var(--bg-color);
+  box-shadow: 0 0 4px rgb(14 55 54 / 15%);
+}
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: 600;
+  column-gap: 0.2rem;
+  color: var(--text-color);
+}
+.logo .bx {
+  font-size: 24px;
+  color: var(--main-color);
+}
+.navbar {
+  display: flex;
+  column-gap: 2.4rem;
+}
+.navbar a {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text-color);
+}
+.navbar a:hover {
+  color: var(--main-color);
+}
+.header-icons {
+  font-size: 22px;
+  cursor: pointer;
+  z-index: 100000;
+}
+#menu-icon {
+  display: none;
+}
+.search-box {
+  position: absolute;
+  top: 110%;
+  right: -100%;
+}
+.search-box input {
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 0.5rem;
+  width: 280px;
+  box-shadow: var(--box-shadow);
+}
+.search-box.active {
+  right: 1rem;
+  transition: 0.2s;
+}
+.product-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, auto));
+  gap: 1rem;
+  margin-top: 4px;
+}
+.product-container .box {
+  position: relative;
+  padding: 10px;
+  box-shadow: var(--box-shadow);
+}
+.product-container .box .wishlist {
+  position: absolute;
+  right: 30px;
+  top: 20px;
+}
+.product-container .box .plus-icon {
+    position: absolute;
+    background: #fff;
+    border-radius: 50%;
+    width: 22px;
+    height: 20px;
+    right: 30px;
+    bottom: 70px;
+    text-align: center;
+    padding-bottom: 20px;
+    border: 0;
+}
+.product-container .box img{
+    width: 100%
+}
+.product-container .box .content h2 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.product-container .box:hover img {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  transition: 0.5s;
+}
+li.filter-item{
+    border-top: 1px solid rgb(214, 202, 202);
+    padding: 10px 0;
+    font-size: 12px;
+    font-weight: 500;
+}
+li.filter-item:last-child{
+    border-bottom: 1px solid black;
+}
+
+
+@media (max-width: 1058px) {
+  header {
+    padding: 18px 60px;
+  }
+  section {
+    padding: 50px 60px;
+  }
+  .home-text h1 {
+    font-size: 3rem;
+  }
+}
+.purchase,.gift {
+      border:1px solid black;
+      display:inline;
+      padding:1% 3% 1% 3%;
+      
+  }
+
+  .purchase {
+      margin-left:0;
+      margin-right:2%;
+  }
+
+  .refer {
+      margin-top:3%;
+  }
+
+ i {
+     font-size:5px;
+ }  
+ 
+ .c1,.c2,.c3 {
+     display:inline-table;
+     margin-top:4%;
+ }
+
+ .c2,.c3 {
+     margin-left:10%;
+ }
+ 
+.offer a {
+    text-decoration: none;
+}
+
+.rights,.aboutImg {
+    text-align: left;
+}
+@media (max-width: 991px) {
+  header {
+    padding: 18px 4%;
+  }
+  section {
+    padding: 50px 4%;
+  }
+  .home-text h1 {
+    font-size: 2.4rem;
+  }
+}
+@media (max-width: 768px) {
+  header {
+    padding: 12px 4%;
+  }
+  #menu-icon {
+    display: initial;
+  }
+  header .navbar {
+    position: absolute;
+    width: 240px;
+    height: 100vh;
+    top: 100%;
+    right: -100%;
+    display: flex;
+    flex-direction: column;
+    background: var(--bg-color);
+    row-gap: 1.4rem;
+    padding: 20px;
+    box-shadow: 4px 4px 0 4px rgb(14 55 54 / 15%);
+    transition: 0.2s linear;
+    text-align: left;
+  }
+  .navbar.active {
+    right: 0;
+  }
+  .home-text h1 {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 360px) {
+  .home-text span {
+    font-size: 0.8rem;
+  }
+  .home-text h1 {
+    font-size: 1.7rem;
+  }
+  .cart img {
+    width: 77px;
+  }
+  .heading h1 {
+    font-size: 1.4rem;
+  }
+}
+</style>
+
+    <div style="text-align: center;margin-top: 2%;   color: rgb(52,85,113);background-color: rgb(245,211,77); padding: 5px; font-size: 15px;">Buy 2 get 30%off! USE COUPON : 
+        <span style="font-weight: 500;">AEB2G30. <a href>Shop Now</a></span>
+        
+    </div>
+    <div style="text-align: center; margin: 10px 0; font-size: 12px;">
+        <span class="main-heading">Home</span>
+        /
+        <span class="main-heading">Men</span>
+        /
+         <span class="main-heading">Bottoms</span>
+         /
+          <span class="main-heading">Jeans</span>
+    </div>
+    <section class="products" id="products">
+
+        <div style="float: left; width: 30%">
+            <div style="margin-right: 20px">
+                <div>FILTER</div>
+                <div style="font-style: italic; color: rgb(136,136,136); padding: 1%;">151 items</div>
+                <ul style="margin: 10px 5px">
+                    <li class="filter-item"> Category <span style="float: right; margin-right: 10px; font-size: 19px">+</span></li>
+                    <li class="filter-item"> Product Type <span style="float: right; margin-right: 10px; font-size: 19px">+</span></li>
+                    <li class="filter-item"> Fit <span style="float: right; margin-right: 10px; font-size: 19px">+</span></li>
+                    <li class="filter-item"> Sizes <span style="float: right; margin-right: 10px; font-size: 19px">+</span></li>
+                    <li class="filter-item"> Color <span style="float: right; margin-right: 10px; font-size: 19px">+</span></li>
+                    <li class="filter-item"> Price <span style="float: right; margin-right: 10px; font-size: 19px">+</span></li>
+                    <li class="filter-item"> Discount <span style="float: right; margin-right: 10px; font-size: 19px">+</span></li>
+                    <li class="filter-item"> Wash <span style="float: right; margin-right: 10px; font-size: 19px">+</span></li>
+                    <li class="filter-item"> Pattern <span style="float: right; margin-right: 10px; font-size: 19px">+</span></li>
+                    <li class="filter-item"> Stretch <span style="float: right; margin-right: 10px; font-size: 19px">+</span></li>
+                    <li class="filter-item"> Destruction <span style="float: right; margin-right: 10px; font-size: 19px">+</span></li>
+                </ul>
+            </div>
+        </div>
+       <div style="float:right; width: 70%">
+               
+        <div class="heading">
+            <div style= "text-align: left; font-weight: 500;">GRAPHIC-TEES FOR MEN</div>
+        </div>
+        <div class="product-container">
+            <div class="box">
+                
+                   
+                <img src="https://aeo.imgix.net/img/app/product/6/615406-5871841.jpg?w=312&auto=format" alt="">
+                <div class="content">
+                    <div class="wishlist" style="font-size: 28px;">&#9825;</div>
+                  <div><button  class="plus-icon">+</button></div>
+                    <p style="font-size: 10px; text-align: center;">AE AIRFLEX+ SUPER SKINNY JEAN</p>
+                    <div style="text-align: center; font-weight: bold; font-size: 15px;">₹ 1,999</div>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="https://aeo.imgix.net/img/app/product/6/615405-5871830.jpg?w=312&auto=format" alt="">
+                <div class="content">
+                     <div class="wishlist" style="font-size: 28px;">&#9825;</div>
+                   <div><button  class="plus-icon">+</button></div>
+                   <p style="font-size: 10px; text-align: center;">AE AIRFLEX+ ORIGINAL BOOTCUT JEAN</p>
+                   <div style="text-align: center; font-weight: bold; font-size: 15px;">₹ 1,199</div>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="https://aeo.imgix.net/img/app/product/6/615404-5871819.jpg?w=312&auto=format" alt="">
+                <div class="content">
+                     <div class="wishlist" style="font-size: 28px;">&#9825;</div>
+                   <div><button  class="plus-icon">+</button></div>
+                    <p style="font-size: 10px; text-align: center;">AE AIRFLEX+ ORIGINAL BOOTCUT JEAN</p>
+                    <div style="text-align: center; font-weight: bold; font-size: 15px;">₹ 1,799</div>
+                </div>
+            </div>
+
+        </div>
+            <br>
+
+             <div class="product-container">
+                <div class="box">
+                    <img src="https://aeo.imgix.net/img/app/brands/ae/referAfriend/referAfriendPromotion.jpg" alt="">
+                    <div class="content">
+                          <div class="wishlist" style="font-size: 28px;">&#9825;</div>
+                       <div><button  class="plus-icon">+</button></div>
+                       
+                     </div>
+                </div>
+
+                <div class="box">
+                    <img src="https://aeo.imgix.net/img/app/product/6/615402-5871797.jpg?w=312&auto=format" alt="">
+                    <div class="content">
+                         <div class="wishlist" style="font-size: 28px;">&#9825;</div>
+                       <div><button  class="plus-icon">+</button></div>
+                    <p style="font-size: 10px; text-align: center;">AE AIRFLEX+ ORIGINAL BOOTCUT JEAN</p>
+                    <div style="text-align: center; font-weight: bold; font-size: 15px;">₹ 1,999</div>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <img src="https://aeo.imgix.net/img/app/product/6/619119-5944142.jpg?w=312&auto=format" alt="">
+                    <div class="content">
+                         <div class="wishlist" style="font-size: 28px;">&#9825;</div>
+                       <div><button  class="plus-icon">+</button></div>
+                        <p style="font-size: 10px; text-align: center;">AE AIRFLEX+ ORIGINAL BOOTCUT JEAN</p>
+                        <div style="text-align: center; font-weight: bold; font-size: 15px;">₹ 1,399</div>
+                    </div>
+                </div>
+
+            </div>
+            <br>
+            
+       </div>
+       <div style="clear: both" class="product-container">
+            <div class="box">
+                <img src="https://aeo.imgix.net/img/app/product/6/615403-5871808.jpg?w=312&auto=format" alt="">
+                <div class="content">
+                     <div class="wishlist" style="font-size: 28px;">&#9825;</div>
+                   <div><button  class="plus-icon">+</button></div>
+                    <p style="font-size: 10px; text-align: center;">AE AIRFLEX+ SUPER SKINNY JEAN</p>
+                    <div style="text-align: center; font-weight: bold; font-size: 15px;">₹ 1,999</div>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="https://aeo.imgix.net/img/app/product/6/615402-5871797.jpg?w=312&auto=format" alt="">
+                <div class="content">
+                     <div class="wishlist" style="font-size: 28px;">&#9825;</div>
+                   <div><button  class="plus-icon">+</button></div>
+                   <p style="font-size: 10px; text-align: center;">AE AIRFLEX+ ORIGINAL BOOTCUT JEAN</p>
+                   <div style="text-align: center; font-weight: bold; font-size: 15px;">₹ 1,199</div>
+                </div>
+            </div> 
+
+            <div class="box">
+                <img src="https://aeo.imgix.net/img/app/product/6/612972-5831760.jpg?w=312&auto=format" alt="">
+                <div class="content">
+                     <div class="wishlist" style="font-size: 28px;">&#9825;</div>
+                   <div><button  class="plus-icon">+</button></div>
+                    <p style="font-size: 10px; text-align: center;">AE AIRFLEX+ ORIGINAL BOOTCUT JEAN</p>
+                    <div style="text-align: center; font-weight: bold; font-size: 15px;">₹ 1,299</div>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="https://aeo.imgix.net/img/app/product/6/612973-5831771.jpg?w=312&auto=format" alt="">
+                <div class="content">
+                     <div class="wishlist" style="font-size: 28px;">&#9825;</div>
+                   <div><button  class="plus-icon">+</button></div>
+                 <p style="font-size: 10px; text-align: center;">AE AIRFLEX+ SLIM STRAIGHT JEAN</p>
+                  <div style="text-align: center; font-weight: bold; font-size: 15px;">₹ 1,999</div>
+                </div>
+                </div>
+          
+        </div>
+            <br>
+
+            
+            <div class="product-container">
+            <div class="box">
+                <img src="https://aeo.imgix.net/img/app/product/6/615402-5871797.jpg?w=312&auto=format" alt="">
+                <div class="content">
+                    <div class="wishlist" style="font-size: 28px;">&#9825;</div>
+                  <div><button  class="plus-icon">+</button></div>
+                    <p style="font-size: 10px; text-align: center;">AE SUPER SOFT VINTAGE VAULT GRAPHIC T-SHIRT</p>
+                    <div style="text-align: center; font-weight: bold; font-size: 15px;">₹ 1,299</div>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="https://aeo.imgix.net/img/app/product/6/615403-5871808.jpg?w=312&auto=format" alt="">
+                <div class="content">
+                    <div class="wishlist" style="font-size: 28px;">&#9825;</div>
+                  <div><button  class="plus-icon">+</button></div>
+                   <p style="font-size: 10px; text-align: center;">AE SUPER SOFT VINTAGE VAULT GRAPHIC T-SHIRT</p>
+                   <div style="text-align: center; font-weight: bold; font-size: 15px;">₹ 1,599</div>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="https://aeo.imgix.net/img/app/product/6/612973-5831771.jpg?w=312&auto=format" alt="">
+                <div class="content">
+                    <div class="wishlist" style="font-size: 28px;">&#9825;</div>
+                  <div><button  class="plus-icon">+</button></div>
+                    <p style="font-size: 10px; text-align: center;">AE SUPER SOFT VINTAGE VAULT GRAPHIC T-SHIRT</p>
+                    <div style="text-align: center; font-weight: bold; font-size: 15px;">₹ 999</div>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="https://aeo.imgix.net/img/app/product/6/612972-5831760.jpg?w=312&auto=format" alt="">
+                <div class="content">
+                    <div class="wishlist" style="font-size: 28px;">&#9825;</div>
+                  <div><button  class="plus-icon">+</button></div>
+                 <p style="font-size: 10px; text-align: center;">AE SUPER SOFT VINTAGE VAULT GRAPHIC T-SHIRT</p>
+                  <div style="text-align: center; font-weight: bold; font-size: 15px;">₹ 1,599</div>
+                </div>
+                </div>
+            </div>
+             
+            </div>
+            <br>
+        <div class="product-container">
+            <div class="box">
+                <img src="https://aeo.imgix.net/img/app/product/6/609964-5761685.jpg?w=312&auto=format" alt="">
+                <div class="content">
+                    <div class="wishlist" style="font-size: 28px;">&#9825;</div>
+                  <div><button  class="plus-icon">+</button></div>
+                    <p style="font-size: 10px; text-align: center;">AE SUPER SOFT VINTAGE VAULT GRAPHIC T-SHIRT</p>
+                    <div style="text-align: center; font-weight: bold; font-size: 15px;">₹ 999</div>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="https://aeo.imgix.net/img/app/product/6/612967-5831705.jpg?w=312&auto=format" alt="">
+                <div class="content">
+                    <div class="wishlist" style="font-size: 28px;">&#9825;</div>
+                  <div><button  class="plus-icon">+</button></div>
+                   <p style="font-size: 10px; text-align: center;">AE SUPER SOFT VINTAGE VAULT GRAPHIC T-SHIRT</p>
+                   <div style="text-align: center; font-weight: bold; font-size: 15px;">₹ 1,499</div>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="https://aeo.imgix.net/img/app/product/6/609964-5761685.jpg?w=312&auto=format" alt="">
+                <div class="content">
+                    <div class="wishlist" style="font-size: 28px;">&#9825;</div>
+                  <div><button  class="plus-icon">+</button></div>
+                    <p style="font-size: 10px; text-align: center;">AE SUPER SOFT VINTAGE VAULT GRAPHIC T-SHIRT</p>
+                    <div style="text-align: center; font-weight: bold; font-size: 15px;">₹ 1,199</div>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="https://aeo.imgix.net/img/app/product/6/609959-5761629.jpg?w=312&auto=format" alt="">
+                <div class="content">
+                    <div class="wishlist" style="font-size: 28px;">&#9825;</div>
+                  <div><button  class="plus-icon">+</button></div>
+                 <p style="font-size: 10px; text-align: center;">AE SUPER SOFT VINTAGE VAULT GRAPHIC T-SHIRT</p>
+                  <div style="text-align: center; font-weight: bold; font-size: 15px;">₹ 999</div>
+                </div>
+                </div>
+            </div>
+        </div>
+            <br>
+        
+        <div class="product-container">
+            <div class="box">
+                <img src="https://aeo.imgix.net/img/app/product/6/609960-5761641.jpg?w=312&auto=format" alt="">
+                <div class="content">
+                    <div class="wishlist" style="font-size: 28px;">&#9825;</div>
+                  <div><button  class="plus-icon">+</button></div>
+                    <p style="font-size: 10px; text-align: center;">AE SUPER SOFT VINTAGE VAULT GRAPHIC T-SHIRT</p>
+                    <div style="text-align: center; font-weight: bold; font-size: 15px;">₹ 1,599</div>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="https://aeo.imgix.net/img/app/product/6/609958-5761614.jpg?w=312&auto=format" alt="">
+                <div class="content">
+                    <div class="wishlist" style="font-size: 28px;">&#9825;</div>
+                  <div><button  class="plus-icon">+</button></div>
+                   <p style="font-size: 10px; text-align: center;">AE SUPER SOFT VINTAGE VAULT GRAPHIC T-SHIRT</p>
+                   <div style="text-align: center; font-weight: bold; font-size: 15px;">₹ 1,599</div>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="https://aeo.imgix.net/img/app/product/6/609963-5761674.jpg?w=312&auto=format" alt="">
+                <div class="content">
+                    <div class="wishlist" style="font-size: 28px;">&#9825;</div>
+                  <div><button  class="plus-icon">+</button></div>
+                    <p style="font-size: 10px; text-align: center;">AE SUPER SOFT VINTAGE VAULT GRAPHIC T-SHIRT</p>
+                    <div style="text-align: center; font-weight: bold; font-size: 15px;">₹ 1,299</div>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="https://aeo.imgix.net/img/app/product/6/609950-5761531.jpg?w=312&auto=format" alt="">
+                <div class="content">
+                    <div class="wishlist" style="font-size: 28px;">&#9825;</div>
+                  <div><button  class="plus-icon">+</button></div>
+                 <p style="font-size: 10px; text-align: center;">AE SUPER SOFT VINTAGE VAULT GRAPHIC T-SHIRT</p>
+                  <div style="text-align: center; font-weight: bold; font-size: 15px;">₹ 999</div>
+                </div>
+                </div>
+            </div>
+            </div>
+            <br>
+
+
+          <div class="product-container">
+            <div class="box">
+                <img src="https://aeo.imgix.net/img/app/product/6/609949-5761520.jpg?w=312&auto=format" alt="">
+                <div class="content">
+                    <div class="wishlist" style="font-size: 28px;">&#9825;</div>
+                  <div><button  class="plus-icon">+</button></div>
+                    <p style="font-size: 10px; text-align: center;">AE SUPER SOFT VINTAGE VAULT GRAPHIC T-SHIRT</p>
+                    <div style="text-align: center; font-weight: bold; font-size: 15px;">₹ 1,599</div>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="https://aeo.imgix.net/img/app/product/6/609680-5759025.jpg?w=312&auto=format" alt="">
+                <div class="content">
+                    <div class="wishlist" style="font-size: 28px;">&#9825;</div>
+                  <div><button  class="plus-icon">+</button></div>
+                   <p style="font-size: 10px; text-align: center;">AE SUPER SOFT VINTAGE VAULT GRAPHIC T-SHIRT</p>
+                   <div style="text-align: center; font-weight: bold; font-size: 15px;">₹ 1,599</div>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="https://aeo.imgix.net/img/app/product/6/608415-5729115.jpg?w=312&auto=format" alt="">
+                <div class="content">
+                    <div class="wishlist" style="font-size: 28px;">&#9825;</div>
+                  <div><button  class="plus-icon">+</button></div>
+                    <p style="font-size: 10px; text-align: center;">AE SUPER SOFT VINTAGE VAULT GRAPHIC T-SHIRT</p>
+                    <div style="text-align: center; font-weight: bold; font-size: 15px;">₹ 1,599</div>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="https://aeo.imgix.net/img/app/product/6/608413-5729093.jpg?w=312&auto=format" alt="">
+                <div class="content">
+                    <div class="wishlist" style="font-size: 28px;">&#9825;</div>
+                  <div><button  class="plus-icon">+</button></div>
+                 <p style="font-size: 10px; text-align: center;">AE SUPER SOFT VINTAGE VAULT GRAPHIC T-SHIRT</p>
+                  <div style="text-align: center; font-weight: bold; font-size: 15px;">₹ 1,599</div>
+                </div>
+                </div>
+            </div>
+        </div>
+            <br>
+
+             <div class="product-container">
+            <div class="box">
+                <div class="wishlist" style="font-size: 28px;">&#9825;</div>
+                  <div><button  class="plus-icon">+</button></div>
+                <img src="https://aeo.imgix.net/img/app/product/6/606015-5696200.jpg?w=312&auto=format" alt="">
+                <div class="content">
+                    <p style="font-size: 10px; text-align: center;">AE SUPER SOFT VINTAGE VAULT GRAPHIC T-SHIRT</p>
+                    <div style="text-align: center; font-weight: bold; font-size: 15px;">₹ 1,599</div>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="https://aeo.imgix.net/img/app/product/6/606012-5696172.jpg?w=312&auto=format" alt="">
+                <div class="content">
+                    <div class="wishlist" style="font-size: 28px;">&#9825;</div>
+                  <div><button  class="plus-icon">+</button></div>
+                   <p style="font-size: 10px; text-align: center;">AE SUPER SOFT VINTAGE VAULT GRAPHIC T-SHIRT</p>
+                   <div style="text-align: center; font-weight: bold; font-size: 15px;">₹ 1,599</div>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="https://aeo.imgix.net/img/app/product/6/606013-5696183.jpg?w=312&auto=format" alt="">
+                <div class="content">
+                    <div class="wishlist" style="font-size: 28px;">&#9825;</div>
+                  <div><button  class="plus-icon">+</button></div>
+                    <p style="font-size: 10px; text-align: center;">AE SUPER SOFT VINTAGE VAULT GRAPHIC T-SHIRT</p>
+                    <div style="text-align: center; font-weight: bold; font-size: 15px;">₹ 1,599</div>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="https://aeo.imgix.net/img/app/product/6/605462-5689850.jpg?w=312&auto=format" alt="">
+                <div class="content">
+                    <div class="wishlist" style="font-size: 28px;">&#9825;</div>
+                  <div><button  class="plus-icon">+</button></div>
+                 <p style="font-size: 10px; text-align: center;">AE SUPER SOFT VINTAGE VAULT GRAPHIC T-SHIRT</p>
+                  <div style="text-align: center; font-weight: bold; font-size: 15px;">₹ 1,599</div>
+                </div>
+                </div>
+            </div>
+            </div>
+            <br>
+
+         <div class="product-container">
+            <div class="box">
+                <img src="https://aeo.imgix.net/img/app/product/6/615406-5871841.jpg?w=312&auto=format" alt="">
+                <div class="content">
+                    <div class="wishlist" style="font-size: 28px;">&#9825;</div>
+                  <div><button  class="plus-icon">+</button></div>
+                    <p style="font-size: 10px; text-align: center;">AE SUPER SOFT VINTAGE VAULT GRAPHIC T-SHIRT</p>
+                    <div style="text-align: center; font-weight: bold; font-size: 15px;">₹ 1,599</div>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="https://aeo.imgix.net/img/app/product/6/615405-5871830.jpg?w=312&auto=format" alt="">
+                <div class="content">
+                    <div class="wishlist" style="font-size: 28px;">&#9825;</div>
+                  <div><button  class="plus-icon">+</button></div>
+                   <p style="font-size: 10px; text-align: center;">AE SUPER SOFT VINTAGE VAULT GRAPHIC T-SHIRT</p>
+                   <div style="text-align: center; font-weight: bold; font-size: 15px;">₹ 1,599</div>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="https://aeo.imgix.net/img/app/product/6/615404-5871819.jpg?w=312&auto=format" alt="">
+                <div class="content">
+                    <div class="wishlist" style="font-size: 28px;">&#9825;</div>
+                  <div><button  class="plus-icon">+</button></div>
+                    <p style="font-size: 10px; text-align: center;">AE SUPER SOFT VINTAGE VAULT GRAPHIC T-SHIRT</p>
+                    <div style="text-align: center; font-weight: bold; font-size: 15px;">₹ 999</div>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="https://aeo.imgix.net/img/app/product/6/615402-5871797.jpg?w=312&auto=format" alt="">
+                <div class="content">
+                    <div class="wishlist" style="font-size: 28px;">&#9825;</div>
+                  <div><button  class="plus-icon">+</button></div>
+                 <p style="font-size: 10px; text-align: center;">AE SUPER SOFT VINTAGE VAULT GRAPHIC T-SHIRT</p>
+                  <div style="text-align: center; font-weight: bold; font-size: 15px;">₹ 1,599</div>
+                </div>
+                </div>
+            </div>
+            </div>
+            <br>
+
+             <div class="product-container">
+            <div class="box">
+                <img src="https://aeo.imgix.net/img/app/product/6/615402-5871797.jpg?w=312&auto=format" alt="">
+                <div class="content">
+                    <div class="wishlist" style="font-size: 28px;">&#9825;</div>
+                  <div><button  class="plus-icon">+</button></div>
+                    <p style="font-size: 10px; text-align: center;">AE SUPER SOFT VINTAGE VAULT GRAPHIC T-SHIRT</p>
+                    <div style="text-align: center; font-weight: bold; font-size: 15px;">₹ 1,299</div>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="https://aeo.imgix.net/img/app/product/6/615403-5871808.jpg?w=312&auto=format" alt="">
+                <div class="content">
+                    <div class="wishlist" style="font-size: 28px;">&#9825;</div>
+                  <div><button  class="plus-icon">+</button></div>
+                   <p style="font-size: 10px; text-align: center;">AE SUPER SOFT VINTAGE VAULT GRAPHIC T-SHIRT</p>
+                   <div style="text-align: center; font-weight: bold; font-size: 15px;">₹ 1,599</div>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="https://aeo.imgix.net/img/app/product/6/612973-5831771.jpg?w=312&auto=format" alt="">
+                <div class="content">
+                    <div class="wishlist" style="font-size: 28px;">&#9825;</div>
+                  <div><button  class="plus-icon">+</button></div>
+                    <p style="font-size: 10px; text-align: center;">AE SUPER SOFT VINTAGE VAULT GRAPHIC T-SHIRT</p>
+                    <div style="text-align: center; font-weight: bold; font-size: 15px;">₹ 1,599</div>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="https://aeo.imgix.net/img/app/product/6/612972-5831760.jpg?w=312&auto=format" alt="">
+                <div class="content">
+                    <div class="wishlist" style="font-size: 28px;">&#9825;</div>
+                  <div><button  class="plus-icon">+</button></div>
+                 <p style="font-size: 10px; text-align: center;">AE SUPER SOFT VINTAGE VAULT GRAPHIC T-SHIRT</p>
+                  <div style="text-align: center; font-weight: bold; font-size: 15px;">₹ 1,599</div>
+                </div>
+                </div>
+            </div>
+             
+            </div>
+            <br>
+        <div class="product-container">
+            <div class="box">
+                <img src="https://aeo.imgix.net/img/app/product/6/612971-5831749.jpg?w=312&auto=format" alt="">
+                <div class="content">
+                    <div class="wishlist" style="font-size: 28px;">&#9825;</div>
+                  <div><button  class="plus-icon">+</button></div>
+                    <p style="font-size: 10px; text-align: center;">AE SUPER SOFT VINTAGE VAULT GRAPHIC T-SHIRT</p>
+                    <div style="text-align: center; font-weight: bold; font-size: 15px;">₹ 1,599</div>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="https://aeo.imgix.net/img/app/product/6/612967-5831705.jpg?w=312&auto=format" alt="">
+                <div class="content">
+                    <div class="wishlist" style="font-size: 28px;">&#9825;</div>
+                  <div><button  class="plus-icon">+</button></div>
+                   <p style="font-size: 10px; text-align: center;">AE SUPER SOFT VINTAGE VAULT GRAPHIC T-SHIRT</p>
+                   <div style="text-align: center; font-weight: bold; font-size: 15px;">₹ 1,199</div>
+                </div>
+            </div> 
+
+             <div class="box">
+                <img src="https://aeo.imgix.net/img/app/product/6/609964-5761685.jpg?w=312&auto=format" alt="">
+                <div class="content">
+                    <div class="wishlist" style="font-size: 28px;">&#9825;</div>
+                  <div><button  class="plus-icon">+</button></div>
+                    <p style="font-size: 10px; text-align: center;">AE SUPER SOFT VINTAGE VAULT GRAPHIC T-SHIRT</p>
+                    <div style="text-align: center; font-weight: bold; font-size: 15px;">₹ 1,599</div>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="https://aeo.imgix.net/img/app/product/6/609959-5761629.jpg?w=312&auto=format" alt="">
+                <div class="content">
+                    <div class="wishlist" style="font-size: 28px;">&#9825;</div>
+                  <div><button  class="plus-icon">+</button></div>
+                 <p style="font-size: 10px; text-align: center;">AE SUPER SOFT VINTAGE VAULT GRAPHIC T-SHIRT</p>
+                  <div style="text-align: center; font-weight: bold; font-size: 15px;">₹ 1,599</div>
+                </div>
+                </div>
+            </div>
+        </div>
+            <br>
+        
+        <div class="product-container">
+            <div class="box">
+                <img src="https://aeo.imgix.net/img/app/product/6/609960-5761641.jpg?w=312&auto=format" alt="">
+                <div class="content">
+                    <div class="wishlist" style="font-size: 28px;">&#9825;</div>
+                  <div><button  class="plus-icon">+</button></div>
+                    <p style="font-size: 10px; text-align: center;">AE SUPER SOFT VINTAGE VAULT GRAPHIC T-SHIRT</p>
+                    <div style="text-align: center; font-weight: bold; font-size: 15px;">₹ 1,599</div>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="https://aeo.imgix.net/img/app/product/6/609958-5761614.jpg?w=312&auto=format" alt="">
+                <div class="content">
+                    <div class="wishlist" style="font-size: 28px;">&#9825;</div>
+                  <div><button  class="plus-icon">+</button></div>
+                   <p style="font-size: 10px; text-align: center;">AE SUPER SOFT VINTAGE VAULT GRAPHIC T-SHIRT</p>
+                   <div style="text-align: center; font-weight: bold; font-size: 15px;">₹ 1,599</div>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="https://aeo.imgix.net/img/app/product/6/609963-5761674.jpg?w=312&auto=format" alt="">
+                <div class="content">
+                    <div class="wishlist" style="font-size: 28px;">&#9825;</div>
+                  <div><button  class="plus-icon">+</button></div>
+                    <p style="font-size: 10px; text-align: center;">AE SUPER SOFT VINTAGE VAULT GRAPHIC T-SHIRT</p>
+                    <div style="text-align: center; font-weight: bold; font-size: 15px;">₹ 1,599</div>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="https://aeo.imgix.net/img/app/product/6/609950-5761531.jpg?w=312&auto=format" alt="">
+                <div class="content">
+                    <div class="wishlist" style="font-size: 28px;">&#9825;</div>
+                  <div><button  class="plus-icon">+</button></div>
+                 <p style="font-size: 10px; text-align: center;">AE SUPER SOFT VINTAGE VAULT GRAPHIC T-SHIRT</p>
+                  <div style="text-align: center; font-weight: bold; font-size: 15px;">₹ 1,599</div>
+                </div>
+                </div>
+            </div>
+            </div>
+            <br>
+
+
+          <div class="product-container">
+            <div class="box">
+                <img src="https://aeo.imgix.net/img/app/product/6/609949-5761520.jpg?w=312&auto=format" alt="">
+                <div class="content">
+                    <div class="wishlist" style="font-size: 28px;">&#9825;</div>
+                  <div><button  class="plus-icon">+</button></div>
+                    <p style="font-size: 10px; text-align: center;">AE SUPER SOFT VINTAGE VAULT GRAPHIC T-SHIRT</p>
+                    <div style="text-align: center; font-weight: bold; font-size: 15px;">₹ 1,299</div>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="https://aeo.imgix.net/img/app/product/6/609680-5759025.jpg?w=312&auto=format" alt="">
+                <div class="content">
+                    <div class="wishlist" style="font-size: 28px;">&#9825;</div>
+                  <div><button  class="plus-icon">+</button></div>
+                   <p style="font-size: 10px; text-align: center;">AE SUPER SOFT VINTAGE VAULT GRAPHIC T-SHIRT</p>
+                   <div style="text-align: center; font-weight: bold; font-size: 15px;">₹ 1,599</div>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="https://aeo.imgix.net/img/app/product/6/608415-5729115.jpg?w=312&auto=format" alt="">
+                <div class="content">
+                    <div class="wishlist" style="font-size: 28px;">&#9825;</div>
+                  <div><button  class="plus-icon">+</button></div>
+                    <p style="font-size: 10px; text-align: center;">AE SUPER SOFT VINTAGE VAULT GRAPHIC T-SHIRT</p>
+                    <div style="text-align: center; font-weight: bold; font-size: 15px;">₹ 1,599</div>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="https://aeo.imgix.net/img/app/product/6/608413-5729093.jpg?w=312&auto=format" alt="">
+                <div class="content">
+                    <div class="wishlist" style="font-size: 28px;">&#9825;</div>
+                  <div><button  class="plus-icon">+</button></div>
+                 <p style="font-size: 10px; text-align: center;">AE SUPER SOFT VINTAGE VAULT GRAPHIC T-SHIRT</p>
+                  <div style="text-align: center; font-weight: bold; font-size: 15px;">₹ 1,599</div>
+                </div>
+                </div>
+            </div>
+        </div>
+            <br>
+
+             <div class="product-container">
+            <div class="box">
+                <img src="https://aeo.imgix.net/img/app/product/6/606015-5696200.jpg?w=312&auto=format" alt="">
+                <div class="content">
+                    <div class="wishlist" style="font-size: 28px;">&#9825;</div>
+                  <div><button  class="plus-icon">+</button></div>
+                    <p style="font-size: 10px; text-align: center;">AE SUPER SOFT VINTAGE VAULT GRAPHIC T-SHIRT</p>
+                    <div style="text-align: center; font-weight: bold; font-size: 15px;">₹ 1,499</div>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="https://aeo.imgix.net/img/app/product/6/606012-5696172.jpg?w=312&auto=format" alt="">
+                <div class="content">
+                    <div class="wishlist" style="font-size: 28px;">&#9825;</div>
+                  <div><button  class="plus-icon">+</button></div>
+                   <p style="font-size: 10px; text-align: center;">AE SUPER SOFT VINTAGE VAULT GRAPHIC T-SHIRT</p>
+                   <div style="text-align: center; font-weight: bold; font-size: 15px;">₹ 1,599</div>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="https://aeo.imgix.net/img/app/product/6/606013-5696183.jpg?w=312&auto=format" alt="">
+                <div class="content">
+                    <div class="wishlist" style="font-size: 28px;">&#9825;</div>
+                  <div><button  class="plus-icon">+</button></div>
+                    <p style="font-size: 10px; text-align: center;">AE SUPER SOFT VINTAGE VAULT GRAPHIC T-SHIRT</p>
+                    <div style="text-align: center; font-weight: bold; font-size: 15px;">₹ 1,599</div>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="https://aeo.imgix.net/img/app/product/6/605462-5689850.jpg?w=312&auto=format" alt="">
+                <div class="content">
+                    <div class="wishlist" style="font-size: 28px;">&#9825;</div>
+                  <div><button  class="plus-icon">+</button></div>
+                 <p style="font-size: 10px; text-align: center;">AE SUPER SOFT VINTAGE VAULT GRAPHIC T-SHIRT</p>
+                  <div style="text-align: center; font-weight: bold; font-size: 15px;">₹ 999</div>
+                </div>
+                </div>
+            </div>
+            </div>
+            <br>
+            
+        <div>RECENTLY VIEWED</div>
+        <hr>
+          <div class="product-container">
+            <div class="box">
+                <img src="https://aeo.imgix.net/img/app/product/6/609962-5761661.jpg?w=312&auto=format" alt="">
+                <div class="content">
+                   <div><button  class="plus-icon">+</button></div>
+                    <p style="font-size: 10px; text-align: center;">AE SUPER SOFT VINTAGE VAULT GRAPHIC T-SHIRT</p>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="https://aeo.imgix.net/img/app/product/6/606012-5696172.jpg?w=312&auto=format" alt="">
+                <div class="content">
+                   <div><button  class="plus-icon">+</button></div>
+                   <p style="font-size: 10px; text-align: center;">AE SUPER SOFT VINTAGE VAULT GRAPHIC T-SHIRT</p>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="https://aeo.imgix.net/img/app/product/6/605461-5689839.jpg?w=312&auto=format" alt="">
+                <div class="content">
+                   <div><button  class="plus-icon">+</button></div>
+                    <p style="font-size: 10px; text-align: center;">AE SUPER SOFT VINTAGE VAULT GRAPHIC T-SHIRT</p>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="https://aeo.imgix.net/img/app/product/6/615405-5871830.jpg?w=312&auto=format" alt="">
+                <div class="content">
+                   <div><button  class="plus-icon">+</button></div>
+                 <p style="font-size: 10px; text-align: center;">AE SUPER SOFT VINTAGE VAULT GRAPHIC T-SHIRT</p>
+                </div>
+                </div>
+            </div>
+        </div>
+            <br>
+            <br>
+            <br>
+            <h6 style="font-size: small;">Men's Graphic T-Shirts</h6>
+            <p style="font-size:x-small;margin-top: 0.5%;">Graphic Tees are quite essential men's tops. Since we do not have the practice of wearing a suit or formals every time, we meet our friends, graphic t shirts for men are the best solution.
+The collection of men's graphic T-shirts at American Eagle is quite fancy. These printed t-shirts are the best for casual occasions and regular men's wear. Since T-shirts are the simplest apparel to wear and style, we all love wearing a t-shirt.</p>
+        <br>
+        <h6  style="font-size: small;">Why American Eagle's Graphic Tees for Men?</h6>
+        <p style="font-size:x-small;margin-top: 0.5%;">Graphic T-shirts not only provide a stylish look, but these are also highly comfortable. Yes, polos and shirts are classy, but nothing can compare the comfort of a t- shirt. Thus, we bring to you a wide range of graphic tees for men.
+We, at American Eagle understand your requirement for a comfortable T-shirt that goes well with a pair of jeans; hence our in-house experts have crafted 4 unique fits that gives you the appropriate look for every occasion.</p>
+        <br>
+     <h6 style="font-size: small;">How Men Can Style Graphic T-Shirts?</h6>
+     <p style="font-size:x-small;margin-top: 0.5%;">Graphic T-shirts are essential in your wardrobe. These T-shirts are essentially donned when going out for a concert, catching up with friends or even whilst going out of the house to buy ration.
+Pair your favourite men's graphic t-shirt with other tops like polo t-shirts, sweaters, jackets, and pullovers to create a layered look you want.</p>
+    <p style="font-size:x-small;margin-top: 0.5%;">A printed t shirt on a pair of jeans and sneakers is an ideal choice for going out with friends for coffee or beer. Besides, printed graphic tees in different colours is essential for regular college lectures and chill scenes.</p>
+     <br>
+     <h6 style="font-size: small;">Men's Graphic T-Shirts Fabric</h6>
+     <p style="font-size:x-small;margin-top: 0.5%;">Men's T-shirts by American Eagle are cotton-based which gives you an eccentric look every time you don them.</p>
+     <p style="font-size:x-small;margin-top: 0.5%;">Since our t-shirts are cotton-based it is advised to wash them after every wear. Also, it is recommended to iron the T-shirt before donning it. Since creases on cotton tops make the entire appeal dull and gives a nasty look and feel.</p><br>
+     <h6 style="font-size: small;">Men's Graphic T-Shirt Sizes</h6>
+     <p style="font-size:x-small;margin-top: 0.5%;">American Eagle has Graphic Tees for everybody and body type. The American Eagle range of men's graphic t-shirts is available from XS (Extra Small) to XXL (Extra Extra Large).</p>
+     
+     <p style="font-size:x-small; margin-top: 0.5%;margin-bottom: 2%;">Shop Graphic Tees for Men online from a range of several prints, fits and styles to ensure that you have a sassy look for every occasion. The collection of Men's T-shirts at AEO is perfect for routine wear.</p>
+     <hr>
+      <div id="container"></div>
+      
+      <div class="refer" style="margin-left: 2%;font-size: 20px; font-weight: 400;">
+        <div  style="margin-top: 3%;font-size: 12px; text-justify: auto;">
+           <div style="text-align: center;font-size: 20px;">Want 25% off your purchase? <u>Refer a friend</u>! <span style="margin-left: 4%;">A gift that always fits. <u>Shop E-Gift Card</u></span></div>
+        </div>
+    
+       
+    <div class="about" style=" font-size: 12px;">
+        <div class="c1">
+            <p>
+                
+            PAYMENT OPTIONS<br>
+            Credit,Debit,Paytm Wallet & more
+            </p>
+           
+            <p>
+            STORE LOCATOR
+            </p>
+            <p>
+             EMAIL SIGN UP</p>
+
+        </div>
+        <div class="c2" style="margin-left:20%;">
+            &#128269;TRACK ORDER
+            <p>ABOUT AEO <br>
+            FREQUENTLY ASKED QUESTIONS<br>
+            RETURNS POLICY<br>
+            CANCELLATION POLICY<br>
+            SHIPPING POLICY<br>
+            TERMS AND CONDITIONS OF USE<br>
+            OFFER TERMS AND CONDITIONS <br>
+            PRIVACY POLICY <br>
+            SITE MAP <br>
+        </div>
+        <div class="c3" style="margin-left:20%;">
+             HAVE A QUESTION ?
+            <p>HELP</p>
+            <p>HELP CENTER</p>
+            <div class="follow">
+                FOLLOW US <br>
+               
+            </div>
+        </div>
+        <hr>
+    </div>
+    <div class="rights">
+        © 2021 AEO Management Co. All Rights Reserved.
+       
+    </div>
+    <br>
+    <div class="aboutImg">
+        <img src="about.jfif">
+    </div>
+    <!-- Link To JS -->
+    <script src="temp2.js"></script>
+</body>
+</html>

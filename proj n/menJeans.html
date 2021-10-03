@@ -1,0 +1,1143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy Jeans for Men Only</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+</head>
+
+<body>
+
+  <style>
+  @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.products {
+position:relative;
+display: inline-block;
+}
+
+
+
+.dropdown-content {
+display: none;
+position: absolute;
+
+background-color: #f1f1f1;
+min-width:1200px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+}
+
+.dropdown-content a {
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+
+}
+
+
+.dropdown-content a:hover {background-color:white;}
+
+
+.products:hover .dropdown-content {display: block;}
+
+
+
+.products:hover .pContent {background-color: #F5F5F5;}
+
+.products-w:hover .pContent {background-color:yellow;}
+
+
+.dropbtn-aeo {
+background-color: white;
+color: black;
+padding: 1px;
+font-size: 16px;
+border: none;
+}
+
+.content {
+position: relative;
+display: inline-block;
+}
+
+.aeo-content {
+display: none;
+position: absolute;
+background-color: #f1f1f1;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+}
+
+.aeo-content a {
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+}
+
+.aeo-content a:hover {background-color: #ddd;}
+
+.content:hover .aeo-content {display: block;}
+
+.content:hover .dropbtn-aeo {background-color: #EEEEEE;}
+
+
+.col1,.col2,.col3,.col4,.col5 {
+display:inline-table;
+}
+
+
+
+.content {
+     display:inline-table;
+     font-size:small;
+     margin:1%;
+ }
+
+ .cart {
+     margin-left:65%;
+ }
+
+ .searchBar {
+     margin-top:2%;
+     margin-left:80%;
+     
+    
+ }
+
+ input {
+     width:50%;
+     height:25px;
+    
+ }
+
+ .pContent {
+    background-color: white;
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+ }
+
+
+.pContent,.content {
+     color:#5F5F5F;
+ }
+
+
+ .c1,.c2,.c3 {
+     display:inline-table;
+     margin-top:4%;
+ }
+
+ .c2,.c3 {
+     margin-left:10%;
+ }
+ 
+body {
+  font-family: "lato", sans-serif;
+}
+
+#firstSubBox {
+  background-color: #fbfbfb;
+  padding: 0 1rem 0 1rem;
+}
+
+
+#sorting {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#sorting p {
+  font-size: 18px;
+  font-weight: 500;
+  padding-left: 1.1rem;
+}
+
+#container {
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#filter {
+  width: 24%;
+  min-height: 85vh;
+  margin-bottom: 1rem;
+}
+
+.item-container {
+  width: 24%;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.img-container {
+  width: 100%;
+  height: 25rem;
+}
+
+.img-container img {
+  width: 100%;
+  height: inherit;
+}
+
+.text-container {
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.text-container p {
+  line-height: 1.3rem;
+}
+
+.text-container p:nth-child(2):before {
+  content: "\20B9";
+}
+
+.img-container button {
+  position: relative;
+  padding: 1rem;
+  border-radius: 2rem;
+  background-color: gainsboro;
+  font-size: 1.1rem;
+  font-weight: 500;
+  width: 10rem;
+  bottom: 55%;
+  outline: none;
+  border: none;
+  display: none;
+}
+
+.img-container:hover button {
+  display: inline-block;
+}
+.img-container:hover img {
+  opacity: 0.3;
+}
+
+@media (max-width: 1058px) {
+  header {
+    padding: 18px 60px;
+  }
+  section {
+    padding: 50px 60px;
+  }
+  .home-text h1 {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 991px) {
+  header {
+    padding: 18px 4%;
+  }
+  section {
+    padding: 50px 4%;
+  }
+  .home-text h1 {
+    font-size: 2.4rem;
+  }
+}
+@media (max-width: 768px) {
+  header {
+    padding: 12px 4%;
+  }
+  #menu-icon {
+    display: initial;
+  }
+  header .navbar {
+    position: absolute;
+    width: 240px;
+    height: 100vh;
+    top: 100%;
+    right: -100%;
+    display: flex;
+    flex-direction: column;
+    background: var(--bg-color);
+    row-gap: 1.4rem;
+    padding: 20px;
+    box-shadow: 4px 4px 0 4px rgb(14 55 54 / 15%);
+    transition: 0.2s linear;
+    text-align: left;
+  }
+  .navbar.active {
+    right: 0;
+  }
+  .home-text h1 {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 360px) {
+  .home-text span {
+    font-size: 0.8rem;
+  }
+  .home-text h1 {
+    font-size: 1.7rem;
+  }
+  .cart img {
+    width: 77px;
+  }
+  .heading h1 {
+    font-size: 1.4rem;
+  }
+}
+</style>
+
+    <div class="cart">
+        <div class="content">
+            <p>E-Gift Card</p>
+        </div>
+        <div class="content">
+            <p>Store-Locator</p>
+        </div>
+        <div class="content">
+            <p>Track Order</p>
+        </div>
+       <div class="content">
+           <button class="dropbtn-aeo">MY AEO
+
+           </button>
+            <div class="aeo-content">
+                <a href="#">Sign In</p>
+                <a href="#">AEO Credits</p>
+                <a href="#">Online Order History</p>
+                
+                <a href="#"><u>Create Account</u></p>
+              </div>
+           
+       </div>
+        <div class="content">
+            <p>🖤 Favorites</p>   
+        </div>
+        <div class="content">
+         <button class ="proceed" onclick="(location.href= 'cart.html')"> <i class="material-icons">shopping_bag</i> </button>
+        </div>
+    </div>
+
+    <div class="searchBar">
+        
+        <input type="text" placeholder="Search"> &nbsp;
+       <i class="material-icons">search</i>
+
+    </div>
+    <div class="products">
+        <div class="pContent" style="font-weight: 600; font-size: 15px;"><a href="ae home.html"style="text-decoration:none">AMERICAN EAGLE</a></div>
+    </div>
+        <div class="products">
+            <button class="pContent">Men</button>
+            <div class="dropdown-content">
+             <div class="col1">
+                <a href="#"><strong>TOP</strong></a>
+              <a href="#">T-Shirts</a>
+              <a href="#">Graphic Tees</a>
+               <a href="#">Polo Shirts</a>
+               <a href="#">Shirts</a>
+               <a href="#">Jackets</a>
+               <a href="#">Hoodies and Sweatshirts</a>
+             </div>
+               <div class="col2">
+                <a href="#"><strong>BOTTOMS</strong></a>
+              <a href="#">Jeans</a>
+              <a href="#">Shorts</a>
+               <a href="#">Joggers</a>
+              
+             </div>
+              <div class="col3">
+                 <a href="#"><strong>UNDERWEAR</strong></a>
+              </div>
+              
+              <div class="col4">
+                <a href="#"><strong>SHOES AND ACCESSORIES</strong>
+                   <a href="#">Shoes</a>
+                   <a href="#">Socks</a>
+                   <a href="#">Belts</a>
+                </a>
+              </div>
+              <div class="col5">
+                <a href="#"><strong>FEATURED</strong>
+                   <a href="#">New Arrivals</a>
+                   <a href="#">Best Sellers</a>
+                   <a href="#">Airflex Shop</a>
+                   <a href="#">Ripped Jeans</a>
+                   <a href="#">Logo Shop</a>
+                   <a href="#">Stripe Edit</a>
+              </div>
+            </div>
+              
+          </div>
+            
+            
+            <div class="products">
+            <button class="pContent">Women</button>
+            <div class="dropdown-content">
+             <div class="col1">
+                <a href="#"><strong>TOP</strong></a>
+              <a href="#">T-Shirts</a>
+              <a href="#">Graphic Tees</a>
+              <a href="#">Shirts</a>
+                <a href="#">Sweaters and Cardigans</a>
+               <a href="#">Jackets</a>
+               <a href="#">Hoodies and Sweatshirts</a>
+             </div>
+               <div class="col2">
+                <a href="#"><strong>BOTTOMS </strong></a>
+              <a href="#">Jeans</a>
+              <a href="#">Shorts</a>
+               <a href="#">Pants</a>
+                 <a href="#">Skirts</a>
+                 <a href="#">Joggers</a>
+              
+             </div>
+              <div class="col3">
+                 <a href="#"><strong>DRESSES</strong></a>
+                 <a href="#">Jump Suits</a>
+                 <a href="#">Midi and Maxi Dresses </a>
+                <a href="#">Mini Dresses </a>
+              </div>
+              
+              <div class="col4">
+                <a href="#"><strong>SHOES AND ACCESSORIES</strong>
+                   <a href="#">Shoes</a>
+                   <a href="#">Socks</a>
+                   <a href="#">Belts</a>
+                </a>
+              </div>
+              <div class="col5">
+                <a href="#"><strong>FEATURED</strong>
+                   <a href="#">New Arrivals</a>
+                   <a href="#">Best Sellers</a>
+                   <a href="#">Airflex Shop</a>
+                   <a href="#">Ripped Jeans</a>
+                   <a href="#">Logo Shop</a>
+                   <a href="#">Stripe Edit</a>
+              </div>
+            </div>
+              
+          </div>
+        <div class="products">
+            <button class="pContent">Jeans</button>
+            <div class="dropdown-content">
+                <div class="col1">
+                    <a href="#"><strong>MEN'S JEANS</strong>
+                       <a href="#">Skiny Jeans</a>
+                       <a href="#">Slim Jeans</a>
+                       <a href="#">Airflex Shop</a>
+                       <a href="#">Straight Jeans</a>
+                       <a href="#">Airflex Jeans</a>
+                       
+                </div>
+                <div class="col2">
+                    <a href="#"><strong>WOMEN'S JEANS</strong>
+                       <a href="#">Jeggings</a>
+                       <a href="#">Bootcut Jeans</a>
+                       <a href="#">Girlfriend Jeans</a>
+                       <a href="#">Skinny Jeans</a>
+                       <a href="#">Mom Jeans</a>
+                       <a href="#">Tomgirl Jeans</a>
+                       <a href="#">Curvy Jeans</a>
+                       
+                </div>
+                 </div>
+            </div>
+           
+        </div>
+        <div class="products">
+            <button class="pContent">Clearance</button>
+            <div class="dropdown-content">
+                <div class="col1">
+                    <a href="#"><strong>MEN'S SALE</strong>
+                       <a href="#">Tops</a>
+                       <a href="#">Bottoms</a>
+                       <a href="#">Jeans</a>
+                      
+                       
+                       
+                </div>
+                <div class="col2">
+                    <a href="#"><strong>WOMEN'S SALE</strong>
+                       <a href="#">Tops</a>
+                       <a href="#">Bottoms</a>
+                       <a href="#">Jeans</a>
+                       <a href="#">Dresses</a>
+                       
+                       
+                </div>
+                <div class="col3">
+                    <a href="#"><strong>LAST OF THE BEST </strong>
+                       <a href="#">Upto 60% off</a>
+                       
+                       
+                       
+                </div>
+            </div>
+        </div>
+
+
+    <div style="text-align: center;margin-top: 2%;   color: rgb(52,85,113);background-color: rgb(245,211,77); padding: 5px; font-size: 15px;">Buy 2 get 30%off! USE COUPON : 
+        <span style="font-weight: 500;">AEB2G30. <a href>Shop Now</a></span>
+        
+    </div>
+    <div style="text-align: center; margin: 10px 0; font-size: 12px;">
+        <span class="main-heading">Home</span>
+        /
+        <span class="main-heading">Men</span>
+        /
+         <span class="main-heading">Bottoms</span>
+         /
+          <span class="main-heading">Jeans</span>
+    </div>
+    
+    <div style="display:flex; justify-content: space-between">
+        <img src="https://aeo.imgix.net/img/app/brands/ae/jeans/men/Skinny_11-12-2019.jpg?auto=format" width='16.3%' height='550px'/>
+        <img src="https://aeo.imgix.net/img/app/brands/ae/jeans/men/Slim_11-12-2019.jpg?auto=format" width='16.3%' height='550px'/>
+        <img src="https://aeo.imgix.net/img/app/brands/ae/jeans/men/Slim_Straight_11-12-2019.jpg?auto=format" width='16.3%' height='550px'/>
+        <img src="https://aeo.imgix.net/img/app/brands/ae/jeans/men/Original_Straight_11-12-2019.jpg?auto=format" width='16.3%' height='550px'/>
+        <img src="https://aeo.imgix.net/img/app/brands/ae/jeans/men/Atheletic_11-12-2019.jpg?auto=format" width='16.3%' height='550px'/>
+        <img src="https://aeo.imgix.net/img/app/brands/ae/jeans/men/Bootcut_11-12-2019.jpg?auto=format" width='16.3%' height='550px'/>
+    </div>
+    <br>
+    <br>
+     <div id="sorting">
+        <p>JEANS FOR MEN</p>
+
+        <div class="select" style="margin: 1.5%;" >
+          <select id="sort" onchange="sorting()">
+            <option value="new-arrival">New Arriavals</option>
+            <option value="price-low">Price: Lowest first</option>
+            <option value="price-high">Price: Highest first</option>
+            <option value="a-z">Most viewed</option>
+            <option value="z-a">Most sold</option>
+            <option value="z-a">Discount</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <section class="products" id="products">
+         <div id="container"></div>
+        
+            <br>
+            <hr>
+            <div class="para"; style="margin-left: 1.5%;margin-top: 4%;">
+                <h6 style="font-size: small;font-weight: 600;">Denims and Jeans for Men: Bootcut, Slim, Skinny & More</h6>
+            <p style="font-size:x-small;margin-top: 0.5%;font-size: 12px; text-justify: auto;">At American Eagle, we have spent a lot of time perfecting the art of jeans for men. So that, we can create and alter a pair for jeans that fits you the best.
+Our men's denims collection is brimming with tried and true fits you love, the latest trends, and all the washes and details you are looking for. We use the highest quality denim fabrics to make sure your jeans feel as good as they look. Whether you are into tight-fitting slim jeans or in love with the classic straight leg and bootcut jeans. Also, we always have the newest fits stocked like the skinny jeans or Athletic fit jeans; we have got plenty of options for you to find your next favourite pair of jeans for men at American Eagle.</p>
+        <br>
+        <h6  style="font-size: small;font-weight: 600;">Why American Eagle’s Jeans for Men</h6>
+        <p style="font-size:x-small;margin-top: 0.5%;font-size: 12px; text-justify: auto;">American Eagle’s jeans are better than the rest for good reason. We care about all the details that go into a pair of jeans. From the fabric to the fit, we carefully look into every detail of the jeans and ensure the price of American Eagle jeans is apt. The details of the washes on the denim is thoroughly checked by the in-house experts, it all matters when it comes to making a great pair of jeans that look as good as they feel.</p>
+        <br>
+     <h6 style="font-size: small;font-weight: 600;">How Men Can Style Jeans?</h6>
+     <p style="font-size:x-small;margin-top: 0.5%;font-size: 12px; text-justify: auto;">Choose a light wash jean to add a throwback style to your look or go for a classic look with deep indigo washes. Add character to your denim with coloured or black jeans. And with all kinds of hand-made distressing options like ripped knees, frayed tears and mending or patched holes, your outfits can have a little bit of added edge. Ripped jeans are the always on style you have been looking for to update your look. The best styling tip for a men’s jeans is that you must feel comfortable. Pair the jeans with a white shirt of graphic t-shirt, and you are good to go.</p>
+     <br>
+     <h6 style="font-size: small;font-weight: 600;">Jeans Fabric</h6>
+     <p style="font-size:x-small;margin-top: 0.5%;font-size: 12px; text-justify: auto;">Choose your favourite fits in fabrics ranging from rigid, non-stretch denim to Flex, Ne(X)t Level Flex and AirFlex+ fabrics. Our rigid cotton denim is designed to break in overtime and become more personalized to how you wear them. Our Flex denim is durable and has just enough stretch to move without problems. Ne(X)t Level designs kick things up a couple levels to create the most comfortable jeans you have ever worn. Ne(X)t Level Flex jeans have a high stretch level and always keep their shape even after a full day of wear, and AirFlex jeans are designed with an authentic looking denim that still has a high stretch level to keep you comfortable no matter what you’re up to.</p>
+     <br>
+     <h6 style="font-size: small;font-weight: 600;">Men’s Jeans Sizes</h6>
+     <p style="font-size:x-small;margin-top: 0.5%;font-size: 12px; text-justify: auto;">American Eagle has jeans sizes for everybody and body type in India. From XS (Extra Small) jeans to XXL (Extra Extra Large) jeans for men in India are available online at the best prices</p>
+     
+     <p style="font-size:x-small; margin-top: 0.5%;font-size: 12px; text-justify: auto;">Waist: 26 to 44</p>
+     <p style="font-size:x-small; margin-top: 0.5%; margin-bottom: 3%; ">Length: 28 to 34</p>
+     <hr>
+     </div>
+
+      <div class="refer" style="margin-left: 2%;font-size: 20px; font-weight: 400;">
+        <div class="purchase" style="margin-top: 3%;font-size: 12px; text-justify: auto;">
+           <div style="text-align: center;font-size: 20px;">Want 25% off your purchase? <u>Refer a friend</u>! <span style="margin-left: 4%;">A gift that always fits. <u>Shop E-Gift Card</u></span></div>
+        </div>
+    
+       
+    <div class="about" style=" font-size: 12px;">
+        <div class="c1">
+            <p>
+                <i class="fa">&#xf09d;</i>
+            PAYMENT OPTIONS<br>
+            Credit,Debit,Paytm Wallet & more
+            </p>
+           
+            <p><i class="material-icons">&#xe55f;</i>
+            STORE LOCATOR
+            </p>
+            <p><i class="fa">&#xf0e0;</i>
+             EMAIL SIGN UP</p>
+
+        </div>
+        <div class="c2" style="margin-left:20%;">
+            &#128269;TRACK ORDER
+            <p>ABOUT AEO <br>
+            FREQUENTLY ASKED QUESTIONS<br>
+            RETURNS POLICY<br>
+            CANCELLATION POLICY<br>
+            SHIPPING POLICY<br>
+            TERMS AND CONDITIONS OF USE<br>
+            OFFER TERMS AND CONDITIONS <br>
+            PRIVACY POLICY <br>
+            SITE MAP <br>
+        </div>
+        <div class="c3" style="margin-left:20%;">
+            <i class="fa">&#xf059;</i> HAVE A QUESTION ?
+            <p>HELP</p>
+            <p>HELP CENTER</p>
+            <div class="follow">
+                FOLLOW US <br>
+                <i class="fa">&#xf09a;</i>&nbsp;
+                <i class="fa">&#xf16d;</i>
+            </div>
+        </div>
+        <hr>
+    </div>
+    <div class="rights">
+        © 2021 AEO Management Co. All Rights Reserved.
+       
+    </div>
+    <br>
+    <div class="aboutImg">
+        <img src="about.jfif">
+    </div>
+<!-- Link To JS -->
+    <script>
+
+      var data = [
+    {
+        image:
+            "https://aeo.imgix.net/img/app/product/6/626302-6075269.jpg?auto=format",
+
+        name: "AE AIRFLEX+ SUPER SKINNY JEAN",
+
+        price: 2999,
+
+        id: Math.random(),
+    },
+    {
+        image:
+            "https://aeo.imgix.net/img/app/product/6/621284-5980726.jpg?auto=format",
+
+        name: "AE AIRFLEX+ ORIGINAL BOOTCUT JEAN",
+
+        price: 3999,
+
+        id: Math.random(),
+    },
+    {
+        image:
+            "https://aeo.imgix.net/img/app/product/6/621283-5980715.jpg?auto=format",
+
+        name: "AE AIRFLEX+ ORIGINAL BOOTCUT JEAN",
+
+        price: 3999,
+
+        id: Math.random(),
+    },
+    {
+        image:
+            "https://aeo.imgix.net/img/app/product/6/620788-5972012.jpg?auto=format",
+
+        name: "AE AIRFLEX+ SLIM JEAN",
+
+        price: 2999,
+
+        id: Math.random(),
+    },
+
+    {
+        image:
+            "https://aeo.imgix.net/img/app/product/6/619120-5944155.jpg?auto=format",
+
+        name: "AE FLEX ORIGINAL BOOTCUT JEAN",
+
+        price: 399,
+
+        id: Math.random(),
+    },
+    {
+        image:
+            "https://aeo.imgix.net/img/app/product/6/619119-5944142.jpg?auto=format",
+
+        name: "AE FLEX SLIM STRAIGHT JEAN",
+
+        price: 2999,
+
+        id: Math.random(),
+    },
+    {
+        image:
+            "https://aeo.imgix.net/img/app/product/6/619117-5944122.jpg?auto=format",
+
+        name: "AE AIRFLEX+ SLIM STRAIGHT JEAN",
+
+        price: 2499,
+
+        id: Math.random(),
+    },
+    {
+        image:
+            "https://aeo.imgix.net/img/app/product/6/619116-5944111.jpg?auto=format",
+
+        name: "AE FLEX SKINNY JEAN",
+
+        price: 2499,
+
+        id: Math.random(),
+    },
+    {
+        image:
+            "https://aeo.imgix.net/img/app/product/6/619115-5944100.jpg?auto=format",
+
+        name: "AE AIRFLEX+ SLIM STRAIGHT JEAN",
+
+        price: 2499,
+
+        id: Math.random(),
+    },
+
+    {
+        image:
+            "https://aeo.imgix.net/img/app/product/6/619114-5944089.jpg?auto=format",
+
+        name: "AE AIRFLEX+ SLIM JEAN",
+
+        price: 2499,
+
+        id: Math.random(),
+    },
+    {
+        image:
+            "https://aeo.imgix.net/img/app/product/6/614148-5849790.jpg?auto=format",
+
+        name: "AE AIRFLEX+ TEMP TECH ORIGINAL BOOTCUT JEAN",
+
+        price: 4599,
+
+        id: Math.random(),
+    },
+
+    {
+        image:
+            "https://aeo.imgix.net/img/app/product/6/614147-5849779.jpg?auto=format",
+
+        name: "AE CLASSIC BOOTCUT JEAN",
+
+        price: 3999,
+
+        id: Math.random(),
+    },
+    {
+        image:
+            "https://aeo.imgix.net/img/app/product/6/612964-5831671.jpg?auto=format",
+
+        name: "AE AIRFLEX 360 PATCHED SLIM JEAN",
+
+        price: 4999,
+
+        id: Math.random(),
+    },
+    {
+        image:
+            "https://aeo.imgix.net/img/app/product/6/612962-5831649.jpg?auto=format",
+
+        name: "AE FLEX SLIM STRAIGHT JEAN",
+
+        price: 3599,
+
+        id: Math.random(),
+    },
+    {
+        image:
+            "https://aeo.imgix.net/img/app/product/6/612649-5825880.jpg?auto=format",
+
+        name: "AE AIRFLEX+ SKINNY JEAN",
+
+        price: 2999,
+
+        id: Math.random(),
+    },
+    {
+        image:
+            "https://aeo.imgix.net/img/app/product/6/612648-5825869.jpg?auto=format",
+
+        name: "AE AIRFLEX+ SKINNY JEAN",
+
+        price: 3599,
+
+        id: Math.random(),
+    },
+    {
+        image:
+            "https://aeo.imgix.net/img/app/product/6/611437-5795967.jpg?auto=format",
+
+        name: "AE AIRFLEX 360 MOVE-FREE RIPPED SKINNY JEAN",
+
+        price: 4599,
+
+        id: Math.random(),
+    },
+    {
+        image:
+            "https://aeo.imgix.net/img/app/product/6/611436-6133267.jpg?auto=format",
+
+        name: "AE AIRFLEX+ SLIM JEAN",
+
+        price: 3999,
+
+        id: Math.random(),
+    },
+    {
+        image:
+            "https://aeo.imgix.net/img/app/product/6/611435-5795950.jpg?auto=format",
+
+        name: "AE AIRFLEX+ SLIM JEAN",
+
+        price: 3999,
+
+        id: Math.random(),
+    },
+    {
+        image:
+            "https://aeo.imgix.net/img/app/product/6/611434-5795939.jpg?auto=format",
+
+        name: "AE AIRFLEX+ SLIM JEAN",
+
+        price: 3999,
+
+        id: Math.random(),
+    },
+
+    {
+        image:
+            "https://aeo.imgix.net/img/app/product/6/608408-6036392.jpg?auto=format",
+
+        name: "AE AIRFLEX+ SLIM JEAN",
+
+        price: 3999,
+
+        id: Math.random(),
+    },
+
+    {
+        image:
+            "https://aeo.imgix.net/img/app/product/6/608407-6028106.jpg?auto=format",
+
+        name: "AE AIRFLEX+ SLIM JEAN",
+
+        price: 4599,
+
+        id: Math.random(),
+    },
+    {
+        image:
+            "https://aeo.imgix.net/img/app/product/6/608406-5956355.jpg?auto=format",
+
+        name: "AE AIRFLEX+ SLIM JEAN",
+
+        price: 4599,
+
+        id: Math.random(),
+    },
+    {
+        image:
+            "https://aeo.imgix.net/img/app/product/6/608405-5962910.jpg?auto=format",
+
+        name: "AE AIRFLEX+ SLIM JEAN",
+
+        price: 4599,
+
+        id: Math.random(),
+    },
+    {
+        image:
+            "https://aeo.imgix.net/img/app/product/6/608404-6036385.jpg?auto=format",
+
+        name: "AE AIRFLEX+ SLIM JEAN",
+
+        price: 4599,
+
+        id: Math.random(),
+    },
+    {
+        image:
+            "https://aeo.imgix.net/img/app/product/6/608403-5728982.jpg?auto=format",
+
+        name: "AE AIRFLEX+ ORIGINAL STRAIGHT JEAN",
+
+        price: 3999,
+
+        id: Math.random(),
+    },
+    {
+        image:
+            "https://aeo.imgix.net/img/app/product/6/608402-5728971.jpg?auto=format",
+
+        name: "AE AIRFLEX+ ORIGINAL STRAIGHT JEAN",
+
+        price: 4599,
+
+        id: Math.random(),
+    },
+
+    {
+        image:
+            "https://aeo.imgix.net/img/app/product/6/608400-5728960.jpg?auto=format",
+
+        name: "AE AIRFLEX+ SLIM STRAIGHT JEAN",
+
+        price: 3999,
+
+        id: Math.random(),
+    },
+    {
+        image:
+            "https://aeo.imgix.net/img/app/product/6/607993-5723820.jpg?auto=format",
+
+        name: "AE AIRFLEX+ ORIGINAL STRAIGHT JEAN",
+
+        price: 3999,
+
+        id: Math.random(),
+    },
+    {
+        image:
+            "https://aeo.imgix.net/img/app/product/6/606003-5696072.jpg?auto=format",
+
+        name: "AE COZY AIRFLEX+ SLIM STRAIGHT JEAN",
+
+        price: 3999,
+
+        id: Math.random(),
+    },
+    {
+        image:
+            "https://aeo.imgix.net/img/app/product/6/605998-5696017.jpg?auto=format",
+
+        name: "AE FLEX RELAXED STRAIGHT JEAN",
+
+        price: 3999,
+
+        id: Math.random(),
+    },
+    {
+        image:
+            "https://aeo.imgix.net/img/app/product/6/605990-5695929.jpg?auto=format",
+
+        name: "AE AIRFLEX+ ORIGINAL STRAIGHT JEAN",
+
+        price: 3999,
+
+        id: Math.random(),
+    },
+    {
+        image:
+            "https://aeo.imgix.net/img/app/product/6/605976-5695770.jpg?auto=format",
+
+        name: "AE AIRFLEX+ ATHLETIC STRAIGHT JEAN",
+
+        price: 3599,
+
+        id: Math.random(),
+    },
+    {
+        image:
+            "https://aeo.imgix.net/img/app/product/6/605975-5695759.jpg?auto=format",
+
+        name: "AE AIRFLEX+ ATHLETIC STRAIGHT JEAN",
+
+        price: 3599,
+
+        id: Math.random(),
+    },
+    {
+        image:
+            "https://aeo.imgix.net/img/app/product/6/605947-5695451.jpg?auto=format",
+
+        name: "AE NE(X)T LEVEL AIRFLEX SKINNY JEAN",
+
+        price: 3999,
+
+        id: Math.random(),
+    },
+    {
+        image:
+            "https://aeo.imgix.net/img/app/product/5/598476-5573568.jpg?auto=format",
+
+        name: "AE AIRFLEX+ ORIGINAL BOOTCUT JEAN",
+
+        price: 3999,
+
+        id: Math.random(),
+    },
+    {
+        image:
+            "https://aeo.imgix.net/img/app/product/5/598451-5573381.jpg?auto=format",
+
+        name: "AE AIRFLEX+ ORIGINAL STRAIGHT JEAN",
+
+        price: 3999,
+
+        id: Math.random(),
+    },
+    {
+        image:
+            "https://aeo.imgix.net/img/app/product/6/619116-5944111.jpg?auto=format",
+
+        name: "AE FLEX SKINNY JEAN",
+
+        price: 2499,
+
+        id: Math.random(),
+    },
+    {
+        image:
+            "https://aeo.imgix.net/img/app/product/6/605975-5695759.jpg?auto=format",
+
+        name: "AE AIRFLEX+ ATHLETIC STRAIGHT JEAN",
+
+        price: 3599,
+
+        id: Math.random(),
+    },
+    {
+        image:
+            "https://aeo.imgix.net/img/app/product/6/605998-5696017.jpg?auto=format",
+
+        name: "AE FLEX RELAXED STRAIGHT JEAN",
+
+        price: 3999,
+
+        id: Math.random(),
+    },
+];
+
+var temp = data;
+
+let parent = document.getElementById("container");
+
+function showProduct(item) {
+    item.forEach(function (product) {
+        let div = document.createElement("div");
+        div.setAttribute("class", "item-container");
+
+        let img = document.createElement("img");
+        img.setAttribute("class", "item-img");
+        img.src = product.image;
+
+        let item_name = document.createElement("p");
+        item_name.innerText = product.name;
+
+        let price = document.createElement("p");
+        price.innerText = product.price;
+
+        let text_div = document.createElement("div");
+        text_div.setAttribute("class", "text-container");
+
+        let add_to_cart = document.createElement("button");
+        add_to_cart.innerText = "Add to bag";
+
+        add_to_cart.onclick = function () {
+            addtocart(product);
+        };
+
+        let img_div = document.createElement("div");
+        img_div.setAttribute("class", "img-container");
+        img_div.append(img, add_to_cart);
+
+        text_div.append(item_name, price);
+
+        div.append(img_div, text_div);
+
+        parent.append(div);
+    });
+}
+showProduct(data);
+
+function sorting() {
+    let select = document.getElementById("sort");
+
+    let value = select.options[select.selectedIndex].value;
+
+
+    if (value === "price-low") {
+        sortLH();
+    } else if (value === "price-high") {
+        sortHL();
+    } else if (value === "a-z") {
+        sortAZ();
+    } else if (value === "z-a") {
+        sortZA();
+    } else if (value === "new-arrival") {
+        sortNew();
+    }
+}
+
+function sortLH() {
+    let items = data.sort(function (a, b) {
+        return Number(a.price) - Number(b.price);
+
+    });
+    parent.innerHTML = null;
+    showProduct(items);
+}
+
+function sortHL() {
+    let items = data.sort(function (a, b) {
+        return Number(b.price) - Number(a.price);
+
+    });
+    parent.innerHTML = null;
+    showProduct(items);
+}
+
+function sortAZ() {
+    let items = data.sort(function (a, b) {
+        return a.name.localeCompare(b.name);
+    });
+    parent.innerHTML = null;
+    showProduct(items);
+}
+
+function sortZA() {
+    let items = data.sort(function (a, b) {
+        return b.name.localeCompare(a.name);
+    });
+    parent.innerHTML = null;
+    showProduct(items);
+}
+
+function sortNew() {
+    let items = data.sort(function (a, b) {
+        return a.id - b.id;
+
+    });
+    parent.innerHTML = null;
+    showProduct(items);
+}
+
+
+if (localStorage.getItem("cart") === null) {
+    localStorage.setItem("cart", JSON.stringify([]));
+}
+
+function addtocart(p) {
+    let products_cart = JSON.parse(localStorage.getItem("cart"));
+
+    products_cart.push(p);
+
+    localStorage.setItem("cart", JSON.stringify(products_cart));
+
+    alert("Product successfully added to cart")
+}
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>American Eagle India - Buy Mens & Womens Clothing, Shoes & Accessories| AEO</title>
+    <link rel="stylesheet" href="./signForm.css" />
+  </head>
+  <body>
+
+    <form action="" onsubmit="signin(event)" id="signIn_Form">
+
+      <div id="hr"></div>
+
+      <h2>WELCOME TO<br /><span>AMERICAN EAGLE</span></h2>
+
+      <p>
+        Login / Register with us to get latest updates and manage your orders.
+      </p>
+
+      <input type="text" id="email" placeholder="Enter email" />
+
+      <input type="password" id="password" placeholder="Enter password" />
+
+       <span style="text-align: center;"><button ondblclick="(location.href= 'signin.html')" style="background-color: black;color: white; font-size: 1rem;">Sign In</button></span>
+    </form>
+
+
+    <script>function signin(e){
+    
+    e.preventDefault();
+
+    let formData = document.getElementById("signIn_Form");
+
+    let email = formData.email.value;
+
+    let password = formData.password.value;
+
+    let all_users = JSON.parse(localStorage.getItem("users"));
+
+    all_users.forEach(function (user){
+        if (email === user.email && password === user.password1){
+            alert("Logged in successfully");
+            window.location.assign("ae home.html");
+        }
+    })
+}
+</script>
+  </body>
+</html>
