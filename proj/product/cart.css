@@ -1,0 +1,253 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap");
+      
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+/* ============================================== */
+/*Header CSS part  */
+/* ============================================== */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  /* border: 1px solid red; */
+  padding: 2.7rem 1rem;
+  align-items: center;
+  width: 100%;
+  height: 5rem;
+  box-shadow: 0 0.03rem 0.4rem rgb(190, 190, 190);
+}
+
+header div#logo {
+  font-weight: 400;
+  font-size: 1.1rem;
+  word-spacing: 0.3rem;
+  letter-spacing: 0.2rem;
+  margin-left: 1.3rem;
+}
+
+div#email-wrapper {
+  display: flex;
+  align-items: center;
+  margin-right: 1.3rem;
+}
+
+header div#email-wrapper span {
+  font-size: 2rem;
+}
+
+header div#email-wrapper a {
+  text-decoration: none;
+  color: black;
+  font-size: 0.95rem;
+  font-weight: 300;
+  padding-left: 0.5rem;
+}
+
+header a {
+  text-decoration: none;
+  color: black;
+  font-size: 0.95rem;
+}
+
+/* ==================================== */
+/* section deigning */
+/* ==================================== */
+
+#empty_cart {
+  display: none;
+}
+section {
+  border: 1px solid #d1cece;
+  width: 96%;
+  margin: 4rem auto 1rem;
+  letter-spacing: 0.05rem;
+  font-size: 1.3rem;
+  word-spacing: 0.4rem;
+  text-align: center;
+  line-height: 4rem;
+}
+
+#cart_btn-wrapper {
+  width: 30%;
+  margin: auto;
+}
+
+#cart_btn-wrapper button {
+  width: 100%;
+  padding: 1rem;
+  color: white;
+  background-color: black;
+  border: none;
+  outline: none;
+}
+
+#goToPayment{
+  width: 30%;
+  margin: 1rem auto;
+}
+
+#goToPayment button{
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.2rem;
+  color: white;
+  background-color: black;
+  border: none;
+  outline: none;
+}
+
+/*=============================================  */
+/* if card is not empty then container designing */
+/* ============================================= */
+
+#container {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 2rem;
+}
+
+#order_summary {
+  /* border: 1px solid red; */
+  width: 27%;
+  max-height: 18rem;
+  background-color: #f2f2f2;
+  padding: 1rem 2rem;
+}
+
+#order_summary span {
+  font-size: 0.8rem;
+}
+
+#order_summary p:nth-child(1) {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+#order_summary p:nth-child(2) {
+  padding-bottom: 1.5rem;
+}
+
+#order_summary p:nth-child(2) span:nth-child(1) {
+  float: left;
+}
+
+#order_summary p:nth-child(2) span:last-child {
+  float: right;
+  /* content: "\20B9"; */
+}
+
+#order_summary p:nth-child(2) span:last-child::before {
+  content: "\20B9";
+}
+
+#order_summary p:nth-child(3) {
+  clear: both;
+}
+
+#order_summary p:nth-child(3) span:nth-child(1) {
+  float: left;
+}
+#order_summary p:nth-child(3) span:last-child {
+  float: right;
+}
+
+#order_summary hr {
+  clear: both;
+  margin-top: 1.5rem;
+  border-top: 0.1rem solid black;
+}
+
+#order_summary p:nth-child(5) span {
+  font-weight: 600;
+}
+
+#order_summary p:nth-child(5) span:last-child {
+  float: right;
+}
+
+div#coupon-box {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.8rem;
+}
+
+#coupon-box p {
+  font-size: 0.8rem !important;
+}
+
+#coupon-box input {
+  /* height: 1.5rem; */
+  padding: 0.3rem 0;
+  border: none;
+  outline: none;
+  text-align: center;
+}
+
+#order_summary button{
+  width: 50%;
+  background-color: #918c8c;
+  font-size: 1.2rem;
+  padding: 3%;
+  color: white;
+  margin: 12% 0 0 25%;
+  border: none;
+  outline: none;
+}
+
+/* =============================== */
+/* order dettail div css */
+/* =============================== */
+
+#order_detail {
+  /* border: 1px solid green; */
+  width: 65%;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap: 1rem;
+}
+
+/* =============================== */
+/* cart item display css */
+/* =============================== */
+
+.item-container {
+  width: 100%;
+  /* border: 1px solid green; */
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.img-container {
+  width: 100%;
+  /* border: 1px solid brown; */
+  height: 25rem;
+}
+
+.img-container img {
+  width: 100%;
+  height: inherit;
+}
+
+.text-container {
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.text-container p {
+  line-height: 1.3rem;
+}
+
+.text-container p:nth-child(2):before {
+  content: "\20B9";
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>American Eagle India - Buy Mens & Womens Clothing, Shoes & Accessories| AEO</title>
+    <link rel="stylesheet" href="./signForm.css">
+</head>
+<body>
+    
+
+    <!-- ====================================== -->
+    <!-- Creating Signup form  -->
+    <!-- ====================================== -->
+
+    <form action="" id="signup_form" onsubmit="signup(event)">
+        <div id="hr"></div>
+
+      <h2>WELCOME TO<br /><span>AMERICAN EAGLE</span></h2>
+
+      <p>
+        Register with us to get latest updates and manage your orders.
+      </p>
+
+      <input type="text" id="name" placeholder="Name" required>
+
+      <input type="text" id="dob" onfocus="(this.type='date')" placeholder="Date of birth" required>
+
+      <input type="tel" id="mobile" placeholder="Mobile Number" minlength="10" maxlength="10" required>
+
+      <input type="text" id="email" placeholder="Enter email" required />
+
+      <p>GENDER</p>
+
+      <input type="radio" name="gender" id="male" value="male">
+      <label for="male">Male</label>
+
+      <input type="radio" name="gender" id="female" value="female">
+      <label for="female">Female</label>
+
+      <input type="radio" name="gender" id="other" value="other">
+      <label for="other">Other</label>
+
+      <input type="password" id="password" placeholder="Set a new password" required/>
+
+      <input type="password" name="" id="password2" placeholder="confirm password" required>
+
+
+      <!-- <input type="checkbox" id="checkbox" value="have referral code">
+      <label for="checkbox">I have a referral code</label> -->
+      
+      <input type="submit" value="Create Account" />
+
+    </form>
+
+
+    <script src="./sign-up.js"></script>
+</body>
+</html>

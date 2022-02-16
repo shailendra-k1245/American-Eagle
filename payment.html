@@ -135,7 +135,7 @@ span.price {
 <div class="row">
     <div class="col-75">
         <div class="container">
-            <form id="validate" action="/action_page.php">
+            <form id="validate" onsubmit="pay(e)">
                 <div class="row">
                     <div class="col-50">
                         <h3>Billing Address</h3>
@@ -191,76 +191,80 @@ span.price {
                 <label>
                 <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
                 </label>
-                <div style="text-align: center;"><button onclick="placeorder()" style="background-color: black;color: white; font-size: 25px;">Place Order</button></div>
+                <div style="text-align: center;"><button onclick="placeorder()" >Place Order</button></div>
             </form>
         </div>
     </div>
 
 <script>
 
- function placeorder() 
- {
-    alert("yes");
- }
-function placeorder() 
+  
+
+
+
+
+ 
+
+    // $('#validate').validate({
+    //     roles: {
+    //         fullname: {
+    //             required: true,
+    //         },
+    //         email: {
+    //             required: true,
+    //         },
+    //         address: {
+    //             required: true,
+    //         },
+    //         city: {
+    //             required: true,
+    //         },
+    //         state: {
+    //             required: true,
+    //         },
+    //         zip: {
+    //             required: true,
+    //         },
+    //         cardname: {
+    //             required: true,
+    //         },
+    //         cardnumber: {
+    //             required: true,
+    //         },
+    //         expmonth: {
+    //             required: true,
+    //         },
+    //         expyear: {
+    //             required: true,
+    //         },
+    //         cvv: {
+    //             required: true,
+    //         },
+           
+    //     },
+    //     messages: {
+    //         fullname:"Please input full name*",
+    //         email:"Please input email*",
+    //         city:"Please input city*",
+    //         address:"Please input address*",
+    //         state:"Please input state*",
+    //         zip:"Please input address*",
+    //         cardname:"Please input card name*",
+    //         cardnumber:"Please input card number*",
+    //         expmonth:"Please input exp month*",
+    //         expyear:"Please input exp year*",
+    //         cvv:"Please input cvv*",
+    //     },
+    // });
+
+    function placeorder() 
 {
-    setTimeout(function () {
+    console.log("hello")
         alert('Your Order is Successfully Placed')
-    }, 1000);
+        window.location.href = "./ae home.html"
+    
 
 }
-
-    $('#validate').validate({
-        roles: {
-            fullname: {
-                required: true,
-            },
-            email: {
-                required: true,
-            },
-            address: {
-                required: true,
-            },
-            city: {
-                required: true,
-            },
-            state: {
-                required: true,
-            },
-            zip: {
-                required: true,
-            },
-            cardname: {
-                required: true,
-            },
-            cardnumber: {
-                required: true,
-            },
-            expmonth: {
-                required: true,
-            },
-            expyear: {
-                required: true,
-            },
-            cvv: {
-                required: true,
-            },
-           
-        },
-        messages: {
-            fullname:"Please input full name*",
-            email:"Please input email*",
-            city:"Please input city*",
-            address:"Please input address*",
-            state:"Please input state*",
-            zip:"Please input address*",
-            cardname:"Please input card name*",
-            cardnumber:"Please input card number*",
-            expmonth:"Please input exp month*",
-            expyear:"Please input exp year*",
-            cvv:"Please input cvv*",
-        },
-    });
  
 </script>
 </body>
