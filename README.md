@@ -10,6 +10,10 @@ For the frontend, we have used HTML and CSS and on the backend we've use JavaScr
 <p>Product Page</p>
 <img src="https://miro.medium.com/max/1210/1*xTwwX0aEtBr9OCPtkC1qkA.png">
 
+<p>See the demo of our Project
+  <a href="https://american-eagle.vercel.app/ae%20home.html">Deployed-link</a>
+</p>
+
 <p>Read the details of project in the blog:
   <a href="https://medium.com/@iwilldofine/this-is-how-me-and-my-collogues-cloned-american-eagle-37c34e4abf55">Blog-link</a>
 </p>
