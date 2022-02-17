@@ -10,7 +10,7 @@ For the frontend, we have used HTML and CSS and on the backend we've use JavaScr
 <p>Product Page</p>
 <img src="https://miro.medium.com/max/1210/1*xTwwX0aEtBr9OCPtkC1qkA.png">
 
-<p>See the demo of our Project
+<p>See the demo of our Project:
   <a href="https://american-eagle.vercel.app/ae%20home.html">Deployed-link</a>
 </p>
 
