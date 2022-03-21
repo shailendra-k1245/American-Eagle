@@ -12,7 +12,7 @@ For the frontend, we have used HTML and CSS and on the backend we've use JavaScr
 
 # How to Install and use:
 1. Download the code zip or in cmd type git clone https://github.com/shailendra-k1245/American-Eagle.git.
-2. Extract the zip if downloaded no need if cloned from link.
+2. Extract the zip (no need to extract if cloned from link).
 3. Open 'ae home.html' which is there on the root directory.
 4. Hover mouse on MY AEO and click on create account if not already done. 
 5. Make sure to double click on register button.
